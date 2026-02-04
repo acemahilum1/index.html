@@ -1,0 +1,19 @@
+/* Update your existing body style to this */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff0f3;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Keeps login and maze centered */
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Starts locked so the maze doesn't move */
+}
+
+/* Add this new class at the bottom of your <style> section */
+.allow-scroll {
+    overflow-y: auto !important;
+    align-items: flex-start !important; /* Moves content to top so you can scroll down */
+    height: auto !important;
+    padding: 40px 0;
+}
