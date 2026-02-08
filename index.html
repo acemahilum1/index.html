@@ -65,22 +65,21 @@
 
         button:hover { background: var(--dark-pink); transform: scale(1.05); }
 
-        /* Maze Styles */
         #maze-container { display: none; }
-        #maze-grid {
-            display: grid;
-            grid-template-columns: repeat(15, 22px);
-            grid-template-rows: repeat(15, 22px);
-            gap: 1px;
-            background: #ffe5ec;
-            border: 4px solid var(--pink);
-            margin: 20px auto;
-        }
-        .cell { width: 22px; height: 22px; background: white; }
-        .wall { background: var(--pink); border-radius: 2px; }
-        .end { background: #ffb3c1; display: flex; align-items: center; justify-content: center; font-size: 14px; }
-        .player { background: #ff0000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; box-shadow: 0 0 10px red; }
+    #maze-grid {
+        display: grid;
+        grid-template-columns: repeat(15, 22px);
+        grid-template-rows: repeat(15, 22px);
+        gap: 1px;
+        background: #ffe5ec;
+        border: 4px solid var(--pink);
+        margin: 20px auto;
+    }
 
+    .cell { width: 22px; height: 22px; background: white; }
+    .wall { background: var(--pink); border-radius: 2px; }
+    .end { background: #ffb3c1; display: flex; align-items: center; justify-content: center; font-size: 14px; }
+    .player { background: #ff0000; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 16px; box-shadow: 0 0 10px red; }
         /* Envelope */
         #envelope-wrapper { display: none; perspective: 1000px; }
         .envelope {
@@ -129,10 +128,10 @@
 <body>
 
     <audio id="initial-music" loop>
-        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-15.mp3" type="audio/mpeg">
+        <source src="Cinnamoroll_Anime_Shorts_Theme_Song_Full_Version_English_Subtitles_128KBPS.mp4" type="audio/mpeg">
     </audio>
     <audio id="saksi-ang-langit">
-        <source src="file:///C:/Users/admin/Downloads/saksi-ang-langit.mp3.mp3" type="audio/mpeg">
+        <source src="saksi-ang-langit.mp3 (1).mp3" type="audio/mpeg">
     </audio>
 
     <div id="login-screen" class="container">
@@ -146,6 +145,12 @@
     <div id="maze-container" class="container">
         <h3>Finish the maze to get the message!</h3>
         <div id="maze-grid"></div>
+        <div id="mobile-controls">
+    <button class="control-btn" onclick="move('ArrowUp')">UP</button><br>
+    <button class="control-btn" onclick="move('ArrowLeft')">LEFT</button>
+    <button class="control-btn" onclick="move('ArrowDown')">DOWN</button>
+    <button class="control-btn" onclick="move('ArrowRight')">RIGHT</button>
+</div>
     </div>
 
     <div id="envelope-wrapper" class="container">
@@ -154,20 +159,38 @@
             <div style="position:absolute; bottom:10px; left:42%; font-size:25px;">✉️</div>
         </div>
 
-        <button id="special-music-btn" onclick="playSpecialSong()">🎵 Play Our Song</button>
+        <button id="special-music-btn" onclick="playSpecialSong()">Open the message</button>
         
         <div id="final-message">
             <div class="photo-gallery" id="gallery">
-                <img src="us1.jpg" alt="Us 1">
-                <img src="us2.jpg" alt="Us 2">
-                <img src="us3.jpg" alt="Us 3">
+                <img src="1.jpg.jpg" alt="Us">
+                <img src="2.jpg.jpg" alt="Us">
+                <img src="3.jpg.jpg" alt="Us">
+                <img src="4.jpg.jpg" alt="Us">
+                <img src="5.jpg.jpg" alt="Us">
+                <img src="6.jpg.jpg" alt="Us">
+                <img src="7.jpg.jpg" alt="Us">
+                <img src="8.jpg.jpg" alt="Us">
+                <img src="9.jpg.jpg" alt="Us">
+                <img src="10.jpg.jpg" alt="Us">
+                
             </div>
             
             <h2 style="color: var(--dark-pink); text-align: center; margin-bottom: 15px;">Happy 6th Monthsary! 🌹</h2>
             
             <div style="max-width: 550px; margin: 0 auto; line-height: 1.8; color: #333;">
-                <p>Happy 6th Monthsary to us Bebii! Im very happy that it’s already been half a year since naging tayo. Every day since then, you’ve given me a reason to smile and a sense of peace I never knew I was looking for. Thank you for being my girl, my best friend, and my greatest adventure. Thank you for all the love and efforts na binibigay mo sakin, sa mga araw na magkasama lang tayo buong araw kahit na walang ginagawa basta ikaw kasama ko nakukumpleto na yung araw ko. Saksi ang langit sa bawat hiling ko na sana ikaw na ang huli. Saksi ang bawat bituin sa mga plano at pangarap na binubuo ko, kung san ikaw ang sentro. Maikli man sa iba yung 6 months, para sakin parang taon na sa halos araw araw na magkasama tayo sa dami ng masasayang ginagawa natin sa kada araw na magkasama tayo.hinding hindi ako magsasawa na mahalin at intindihin ka, wag ka sanang magsasawa na mahalin ako. i love you more than my self, more than anything, more than everything iloveyou very much bebii🩷🩷🩷.              </p> 
-                
+                <p>Happy 6th monthsary to us bebi!!</p>
+
+<p>Grabe, half a year na tayo. Parang kailan lang nung nagsisimula pa lang tayo, tapos ngayon 6 months na tayo. ambilis ng panahon, pero at the same time andami nang nangyari at pinagdaanan natin sa loob ng six months.</p>
+
+<p>i just want to say thank you. Thank you for staying with me, sa pag-intindi sa akin, at sa pagmamahal na pinaparamdam mo sakin araw-araw.ik that im not perfect, may mga araw na nagagalit ka sakin o nagkaka-misunderstanding tayo, thank you kasi hindi moko sinusukuan at pinipilit mokong intindihin. Thank you for choosing to love me even on my bad days. Sobrang naa-appreciate ko lahat ng efforts mo, sorry sa mga maling nagawa at naipaparamdam ko sayo im really trying my best be better man for you, to deserve your love sorry for all my mistakes I really love you so much im afraid of loosing you.</p>
+
+<p>in this six months,madami akong natutunan, mas nakilala kita at mas minahal kita ng sobra higit pa sa alam mo. Ikaw ang pahinga na lagging hinahanap ko sa tuwing nakakapagod na ang mundo. You make me happy in all ways na hindi ko inaasahang mararanasan ko. you did all your best to make me feel loved and to make me feel special.</p>
+
+<p>Saksi ang langit sa bawat hiling ko na sana ikaw na ang huli. ang bawat bituin sa mga plano at pangarap na binubuo ko, kung san ikaw ang inspirasyon at ang sentro. Maikli man sa iba ang anim na buwan, para sakin parang taon na sa halos araw araw na magkasama tayo sa dami ng masasayang ginagawa natin sa kada araw na magkasama tayo.hinding hindi ako magsasawa na mahalin at intindihin ka, wag ka sanang magsasawa na mahalin at intindihin ako. i love you more than my self, more than anything, more than everything. ilove you in all ways and I'm willing to do everything for you make you fell happy
+I love you very much bebii🩷🩷🩷.  
+sana magustuhan mo tong ginawa ko para sayo.</p>
+
                 <p style="font-weight: bold; text-align: center; color: var(--dark-pink); font-size: 1.1rem; margin-top: 20px;">
                     Six months down, a lifetime to go. I love you more than words can ever express!<br><br>
                     ILOVEYOU SO MUCH BEBI !!! 🥰🥰😘😘🩷🩷🩷 
@@ -218,19 +241,25 @@
         }
 
         function drawMaze() {
-            const grid = document.getElementById('maze-grid');
-            grid.innerHTML = '';
-            for (let y = 0; y < 15; y++) {
-                for (let x = 0; x < 15; x++) {
-                    const div = document.createElement('div');
-                    div.classList.add('cell');
-                    if (mazeLayout[y][x] === 1) div.classList.add('wall');
-                    if (mazeLayout[y][x] === 3) { div.classList.add('end'); div.innerHTML = '✉️'; }
-                    if (x === playerPos.x && y === playerPos.y) { div.classList.add('player'); div.innerHTML = '❤️'; }
-                    grid.appendChild(div);
-                }
+    const grid = document.getElementById('maze-grid');
+    grid.innerHTML = '';
+    for (let y = 0; y < 15; y++) {
+        for (let x = 0; x < 15; x++) {
+            const div = document.createElement('div');
+            div.classList.add('cell');
+            if (mazeLayout[y][x] === 1) div.classList.add('wall');
+            if (mazeLayout[y][x] === 3) { 
+                div.classList.add('end'); 
+                div.innerHTML = '💌'; // A blue heart for the finish
             }
+            if (x === playerPos.x && y === playerPos.y) { 
+                div.classList.add('player'); 
+                div.innerHTML = '🩷 '; // Represents Cinnamoroll
+            }
+            grid.appendChild(div);
         }
+    }
+}
 
         window.addEventListener('keydown', (e) => {
             if (document.getElementById('maze-container').style.display === 'none') return;
@@ -285,6 +314,6 @@
             });
         }
     </script>
+    <script src="m.js"></script>
 </body>
-
 </html>
